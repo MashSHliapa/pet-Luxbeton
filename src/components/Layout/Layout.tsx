@@ -1,7 +1,8 @@
+import './Layout.scss';
 export const Layout = () => {
   return (
-    <div>
-      <h1>Layout</h1>
+    <div className="layout">
+      Layout
     </div>
   );
 };
