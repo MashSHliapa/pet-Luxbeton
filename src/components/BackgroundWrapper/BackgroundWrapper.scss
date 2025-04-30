@@ -1,0 +1,20 @@
+@use '../Layout/Layout.scss' as layout;
+
+.backgroundWrapper {
+  position: relative;
+  overflow: hidden;
+
+  &__bg {
+    @include layout.breakpoint(sm) {
+      display: none;
+    }
+  }
+
+  &__bg-mobile {
+    display: none;
+
+    @include layout.breakpoint(sm) {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+@use '../Layout/Layout.scss' as layuot;
+
+.main {
+  &__body {
+    display: flex;
+  }
+
+  &__content-box {
+    flex: 0 1 770px;
+    margin-bottom: 103px;
+
+    @include layuot.breakpoint(sm) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    line-height: 1.2;
+
+    @include layuot.breakpoint(sm) {
+      line-height: 1.1;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 60px;
+    max-width: 607px;
+    padding: 17px 30px;
+    margin-bottom: 13px;
+
+    @include layuot.breakpoint(md) {
+      max-width: 397px;
+    }
+
+    @include layuot.breakpoint(sm) {
+      font-size: 50px;
+      max-width: 325px;
+      padding: 14px 20px;
+      margin-bottom: 10px;
+    }
+
+    @include layuot.breakpoint(xs) {
+      font-size: 42px;
+      max-width: 275px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 28px;
+    max-width: 700px;
+
+    @include layuot.breakpoint(sm) {
+      font-size: 26px;
+      max-width: 540px;
+    }
+
+    @include layuot.breakpoint(xs) {
+      font-size: 19px;
+      max-width: 440px;
+    }
+  }
+
+  &__list {
+    margin: 42px 0 51px;
+    max-width: 500px;
+
+    @include layuot.breakpoint(md) {
+      max-width: 400px;
+    }
+
+    @include layuot.breakpoint(sm) {
+      margin: 30px 0 350px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  &__icon {
+    flex: 0 0 50px;
+  }
+
+  &__text {
+    @include layuot.breakpoint(sm) {
+      font-size: 16px;
+    }
+  }
+
+  &__button-wraper {
+    display: flex;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #ffa45c, #f65f50);
+    border-radius: 50px;
+    width: 283px;
+    height: 72px;
+  }
+
+  &__background {
+    flex: 0 1 45%;
+
+    @include layuot.breakpoint(md) {
+      flex: 0 1 60%;
+    }
+    @include layuot.breakpoint(sm) {
+      flex: 0 1 0;
+    }
+  }
+}

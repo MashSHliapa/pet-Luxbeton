@@ -6,6 +6,10 @@
     justify-content: space-between;
     align-items: center;
     margin: 25px 0 50px;
+
+    @include layout.breakpoint(sm) {
+      margin: 16px 0 38px;
+    }
   }
 
   &__burger-menu {
@@ -25,7 +29,6 @@
   @include layout.breakpoint(xs) {
     gap: 15px;
   }
-
 
   &__favicon {
     @include layout.breakpoint(lg) {
