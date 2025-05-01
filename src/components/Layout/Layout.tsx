@@ -1,4 +1,5 @@
 import { BackgroundWrapper } from '../BackgroundWrapper/BackgroundWrapper';
+import { Gallery } from '../Gallery/Gallery';
 import { Header } from '../Header/Header';
 import { Main } from '../Main/Main';
 import './Layout.scss';
@@ -10,6 +11,7 @@ export const Layout = () => {
         <Header />
         <Main />
       </BackgroundWrapper>
+      <Gallery />
     </div>
   );
 };
