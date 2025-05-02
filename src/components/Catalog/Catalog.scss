@@ -1,0 +1,60 @@
+@use '../Layout/Layout.scss' as layout;
+
+.catalog {
+  position: relative;
+
+  &__body {
+    padding: 160px 0 234px;
+
+    @include layout.breakpoint(sm) {
+      padding: 160px 0 110px;
+    }
+
+    @include layout.breakpoint(xs) {
+      padding: 100px 0 112px;
+    }
+  }
+
+  &__title {
+    margin: 0 auto;
+    max-width: 330px;
+
+    @include layout.breakpoint(xs) {
+      max-width: 200px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 50px;
+    margin-top: 50px;
+
+    @include layout.breakpoint(xs) {
+      margin-top: 30px;
+    }
+  }
+
+  &__item {
+    flex: 0 1 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    @include layout.breakpoint(sm) {
+      flex: 0 1 100%;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 28px;
+
+    @include layout.breakpoint(lg) {
+      font-size: 22px;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { BackgroundWrapper } from '../BackgroundWrapper/BackgroundWrapper';
+import { Catalog } from '../Catalog/Catalog';
 import { Gallery } from '../Gallery/Gallery';
 import { Header } from '../Header/Header';
 import { Main } from '../Main/Main';
@@ -12,6 +13,7 @@ export const Layout = () => {
         <Main />
       </BackgroundWrapper>
       <Gallery />
+      <Catalog />
     </div>
   );
 };

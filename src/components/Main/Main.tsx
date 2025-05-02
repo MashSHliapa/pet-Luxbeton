@@ -2,6 +2,7 @@ import icon1 from '../../assets/icons/main_icon1.svg';
 import icon2 from '../../assets/icons/main_icon2.svg';
 import icon3 from '../../assets/icons/main_icon3.svg';
 import icon4 from '../../assets/icons/main_icon4.svg';
+import { Title } from '../Title/Title';
 import './Main.scss';
 
 export const Main = () => {
@@ -10,13 +11,9 @@ export const Main = () => {
       <div className="main__container _container">
         <div className="main__body">
           <div className="main__content-box">
-            <h1 className="main__title corner-border">
-              <span className="corner-border__corner corner-border__corner-tl"></span>
-              <span className="corner-border__corner corner-border__corner-tr"></span>
-              <span className="corner-border__corner corner-border__corner-bl"></span>
-              <span className="corner-border__corner corner-border__corner-br"></span>
-              Модульный барбекю комплекс
-            </h1>
+            <div className="main__title">
+              <Title>Модульный барбекю комплекс</Title>
+            </div>
             <h2 className="main__subtitle">
               на основе натурального (полудрагоценного) камня от производителя за 14 дней с доставкой в любую{' '}
               <span className="note">точку РФ!</span>

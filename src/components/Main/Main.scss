@@ -14,7 +14,6 @@
     }
   }
 
-  &__title,
   &__subtitle {
     line-height: 1.2;
 
@@ -24,10 +23,7 @@
   }
 
   &__title {
-    font-weight: 700;
-    font-size: 60px;
     max-width: 607px;
-    padding: 17px 30px;
     margin-bottom: 13px;
 
     @include layuot.breakpoint(md) {
@@ -35,9 +31,7 @@
     }
 
     @include layuot.breakpoint(sm) {
-      font-size: 50px;
       max-width: 325px;
-      padding: 14px 20px;
       margin-bottom: 10px;
     }
 
