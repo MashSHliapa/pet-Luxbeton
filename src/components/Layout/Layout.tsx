@@ -1,3 +1,4 @@
+import { Advantages } from '../Advantages/Advantages';
 import { BackgroundWrapper } from '../BackgroundWrapper/BackgroundWrapper';
 import { Catalog } from '../Catalog/Catalog';
 import { Gallery } from '../Gallery/Gallery';
@@ -14,6 +15,7 @@ export const Layout = () => {
       </BackgroundWrapper>
       <Gallery />
       <Catalog />
+      <Advantages />
     </div>
   );
 };

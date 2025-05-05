@@ -1,6 +1,6 @@
 import './Title.scss';
 
-export const Title = (props: { children: string }) => {
+export const Title = (props: { children: React.ReactNode }) => {
   return (
     <h2 className="title corner-border">
       {props.children}
