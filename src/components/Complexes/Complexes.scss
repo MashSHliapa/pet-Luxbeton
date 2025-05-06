@@ -1,0 +1,114 @@
+@use '../Layout/Layout.scss' as layout;
+@use '../Layout/Layout.scss' as style;
+
+.complexes {
+  &__body {
+    padding-bottom: 112px;
+
+    @include layout.breakpoint(md) {
+      padding-bottom: 88px;
+    }
+  }
+
+  &__title {
+    color: style.$black-color;
+    text-align: center;
+    max-width: 1030px;
+    margin: 0 auto;
+
+    @include layout.breakpoint(lg) {
+      max-width: 730px;
+    }
+
+    @include layout.breakpoint(md) {
+      max-width: 618px;
+    }
+
+    @include layout.breakpoint(sm) {
+      max-width: 470px;
+    }
+
+    @include layout.breakpoint(xs) {
+      max-width: 230px;
+    }
+  }
+}
+
+.slider {
+  position: relative;
+  margin: auto 0;
+  padding: 0 10px;
+}
+
+.slick-slider {
+  min-width: 0;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  @include layout.breakpoint(md) {
+    gap: 10px;
+  }
+}
+
+.slick-slide {
+  margin: 45px 0 35px;
+
+  @include layout.breakpoint(sm) {
+    margin: 35px 0 35px;
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  transform: translate(0, -50%);
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+
+  @include layout.breakpoint(xs) {
+    top: 98%;
+  }
+}
+
+.slick-arrow.slick-prev {
+  left: 0;
+  background: url('../../assets/icons/arrow_left.svg') center/100% no-repeat;
+}
+
+.slick-arrow.slick-next {
+  right: 0;
+  background: url('../../assets/icons/arrow_right.svg') center/100% no-repeat;
+}
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin: 0 6px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+.slick-dots li.slick-active button {
+  background-color: style.$orange-color;
+}
