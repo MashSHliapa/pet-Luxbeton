@@ -6,7 +6,7 @@ export const Advantages = () => {
     <div className="advantages">
       <div className="advantages__container _container">
         <div className="advantages__body">
-          <div className="advantages__title">
+          <div className="advantages__title text-black">
             <Title>
               Чем наши барбекю комплексы <span className="orange-color">лучше</span>
             </Title>

@@ -1,3 +1,10 @@
+/////// variable
+$black-color: #000000;
+$white-color: #ffffff;
+$orange-color: #ff9900;
+$yellow-orange-gradient: linear-gradient(to bottom left, #ffdaa4, #ffa722);
+$grey-gradient: linear-gradient(to right top, #333333, #656565);
+
 *,
 *::before,
 *::after {
@@ -117,10 +124,29 @@ body {
   white-space: nowrap;
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ff6712, #ff9900);
+  border-radius: 50px;
+  width: 283px;
+  height: 72px;
+
+  @include breakpoint(xs) {
+    width: 274px;
+  }
+}
+
 .orange-color {
   color: #ff9900;
 }
 
-/////// styles
-$black-color: #000000;
-$orange-color: #FF9900;
+.text-black {
+  color: $black-color;
+}
+
+.text-white {
+  color: $white-color;
+}

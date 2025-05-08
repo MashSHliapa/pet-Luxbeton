@@ -1,0 +1,77 @@
+@use '../Layout/Layout.scss' as layout;
+@use '../Layout/Layout.scss' as style;
+
+.design {
+  background: url('../../assets/images/design_bg.png') 100% 50% no-repeat;
+
+  @include layout.breakpoint(lg) {
+    background: url('../../assets/images/design_bg.png') 100% 70%/ 52% no-repeat;
+  }
+
+  @include layout.breakpoint(sm) {
+    background: url('../../assets/images/design_bg_mobile.png') 0 30%/ 100% no-repeat;
+  }
+
+  &__body {
+    padding: 106px 0 135px 64px;
+
+    @include layout.breakpoint(lg) {
+      padding: 0px 0 50px 40px;
+    }
+
+    @include layout.breakpoint(md) {
+      padding: 0px 0 58px 0px;
+    }
+  }
+
+  &__content-box {
+    @include layout.breakpoint(sm) {
+      padding-top: 80px;
+    }
+    @include layout.breakpoint(xs) {
+      max-width: 300px;
+    }
+  }
+
+  &__title,
+  &__text {
+    color: style.$black-color;
+
+    @include layout.breakpoint(sm) {
+      color: style.$white-color;
+    }
+  }
+
+  &__title {
+    max-width: 743px;
+
+    @include layout.breakpoint(lg) {
+      max-width: 470px;
+    }
+
+    @include layout.breakpoint(md) {
+      max-width: 390px;
+    }
+
+    @include layout.breakpoint(sm) {
+      max-width: 360px;
+    }
+
+    @include layout.breakpoint(xs) {
+      max-width: 270px;
+    }
+  }
+
+  &__text {
+    max-width: 380px;
+    margin: 52px 0 70px;
+
+    @include layout.breakpoint(md) {
+      margin: 30px 0 40px;
+    }
+
+    @include layout.breakpoint(xs) {
+      margin: 28px 0 32px;
+    }
+  }
+}

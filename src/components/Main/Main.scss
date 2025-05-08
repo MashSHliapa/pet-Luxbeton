@@ -89,16 +89,6 @@
     display: flex;
   }
 
-  &__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to right, #ffa45c, #f65f50);
-    border-radius: 50px;
-    width: 283px;
-    height: 72px;
-  }
-
   &__background {
     flex: 0 1 45%;
 
