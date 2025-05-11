@@ -8,13 +8,12 @@ import './Catalog.scss';
 
 export const Catalog = () => {
   return (
-    <div className="catalog">
+    <div className="catalog" id="catalog">
       <div className="catalog__container _container">
         <div className="catalog__body">
           <div className="catalog__title">
             <Title>каталог</Title>
           </div>
-
           <ul className="catalog__list">
             <li className="catalog__item">
               <div className="catalog__item">

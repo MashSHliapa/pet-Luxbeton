@@ -1,8 +1,9 @@
+import { BurgerMenu } from '../BurgerMenu/BurgerMenu';
+import { Navbar } from '../Navbar/Navbar';
 import favicon from '../../assets/icons/favicon.svg';
 import whatsApp from '../../assets/icons/whatsApp.svg';
 import telegram from '../../assets/icons/telegram.svg';
 import phone from '../../assets/icons/phone.svg';
-import burgerMenu from '../../assets/icons/burger-menu.svg';
 import './Header.scss';
 
 export const Header = () => {
@@ -17,47 +18,10 @@ export const Header = () => {
             <div className="logo__title">Luxbeton</div>
           </div>
           <div className="header__burger-menu">
-            <img src={burgerMenu} alt="burger-menu" />
+            <BurgerMenu />
           </div>
-
           <div className="header__navbar navbar">
-            <ul className="navbar__list">
-              <li className="navbar__item">
-                <a href="#" className="navbar__link">
-                  Каталог
-                </a>
-              </li>
-
-              <li className="navbar__item">
-                <a href="#" className="navbar__link">
-                  Фотогалерея
-                </a>
-              </li>
-
-              <li className="navbar__item">
-                <a href="#" className="navbar__link">
-                  Акции
-                </a>
-              </li>
-
-              <li className="navbar__item">
-                <a href="#" className="navbar__link">
-                  О компании
-                </a>
-              </li>
-
-              <li className="navbar__item">
-                <a href="#" className="navbar__link">
-                  Проекты
-                </a>
-              </li>
-
-              <li className="navbar__item">
-                <a href="#" className="navbar__link">
-                  Контакты
-                </a>
-              </li>
-            </ul>
+            <Navbar />
           </div>
           <div className="header_contacts contacts">
             <div className="contacts__messangers">
@@ -68,7 +32,6 @@ export const Header = () => {
                     <img src={whatsApp} alt="whatsApp" />
                   </a>
                 </div>
-
                 <div className="contacts__icon icon">
                   <a href="#" target="_blank">
                     <img src={telegram} alt="whatsApp" />
