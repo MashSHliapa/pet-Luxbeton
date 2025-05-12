@@ -150,3 +150,14 @@ body {
 .text-white {
   color: $white-color;
 }
+
+.dot-green::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #00b25c;
+  border-radius: 50%;
+  margin-right: 11px;
+  vertical-align: middle;
+}

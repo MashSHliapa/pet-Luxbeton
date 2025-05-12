@@ -1,0 +1,22 @@
+@use '../Layout/Layout.scss' as layout;
+
+.logo {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  @include layout.breakpoint(xs) {
+    gap: 15px;
+  }
+
+  &__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #ffffff, #b0b0b0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}

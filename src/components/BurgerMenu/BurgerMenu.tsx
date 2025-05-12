@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Navbar } from '../Navbar/Navbar';
 import './BurgerMenu.scss';
+import { Contacts } from '../Contacts/Contacts';
 
 export const BurgerMenu = () => {
   const [isOpenNavbar, setIsOpenNavbar] = useState(false); // Меню в DOM и видимо ли
@@ -39,7 +40,11 @@ export const BurgerMenu = () => {
 
   useEffect(() => {
     const handleClickCloseNavbar = (event: MouseEvent | React.MouseEvent) => {
-      if ((event.target as HTMLElement).closest('.navbar__link')) {
+      if (
+        (event.target as HTMLElement).closest('.navbar__link') ||
+        (event.target as HTMLElement).closest('.messengers__icon') ||
+        (event.target as HTMLElement).closest('.phone__number')
+      ) {
         setIsOpenNavbar(false);
         setAnimationClass('animating-out');
         document.body.style.overflow = 'auto';
