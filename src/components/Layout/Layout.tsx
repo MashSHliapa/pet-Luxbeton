@@ -3,6 +3,7 @@ import { BackgroundWrapper } from '../BackgroundWrapper/BackgroundWrapper';
 import { Catalog } from '../Catalog/Catalog';
 import { Complexes } from '../Complexes/Complexes';
 import { Design } from '../Design/Design';
+import { Footer } from '../Footer/Footer';
 import { Gallery } from '../Gallery/Gallery';
 import { Header } from '../Header/Header';
 import { Main } from '../Main/Main';
@@ -20,6 +21,7 @@ export const Layout = () => {
       <Advantages />
       <Complexes />
       <Design />
+      <Footer />
     </div>
   );
 };

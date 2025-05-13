@@ -1,5 +1,3 @@
-import { Messengers } from '../Messengers/Messengers';
-import { Phone } from '../Phone/Phone';
 import './Navbar.scss';
 export const Navbar = () => {
   return (
@@ -36,14 +34,6 @@ export const Navbar = () => {
           </a>
         </li>
       </ul>
-      <div className="navbar__contacts">
-        <div className="navbar__messengers">
-          <Messengers />
-        </div>
-        <div className="navbar__phone">
-          <Phone />
-        </div>
-      </div>
     </nav>
   );
 };

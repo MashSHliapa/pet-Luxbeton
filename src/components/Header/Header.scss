@@ -1,4 +1,4 @@
-@use '../../components/Layout/Layout.scss' as layout;
+@use '../Layout/Layout.scss' as layout;
 
 .header {
   &__body {
@@ -45,6 +45,28 @@
   &__navbar {
     @include layout.breakpoint(md) {
       display: none;
+    }
+  }
+
+  &__navbar {
+    .navbar__list > :not(:last-child) {
+      margin-right: 30px;
+
+      @include layout.breakpoint(lg) {
+        margin-right: 22px;
+      }
+    }
+  }
+
+  .navbar__item {
+    font-size: 14px;
+
+    @include layout.breakpoint(lg) {
+      font-size: 12px;
+    }
+
+    @include layout.breakpoint(md) {
+      font-size: 16px;
     }
   }
 

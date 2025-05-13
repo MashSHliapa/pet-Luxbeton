@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { Navbar } from '../Navbar/Navbar';
 import './BurgerMenu.scss';
-import { Contacts } from '../Contacts/Contacts';
+import { Messengers } from '../Messengers/Messengers';
+import { Phone } from '../Phone/Phone';
 
 export const BurgerMenu = () => {
-  const [isOpenNavbar, setIsOpenNavbar] = useState(false); // Меню в DOM и видимо ли
+  const [isOpenNavbar, setIsOpenNavbar] = useState(false);
   const [animationClass, setAnimationClass] = useState('');
   const timeoutRef = useRef<number | null>(null);
 
@@ -70,6 +71,14 @@ export const BurgerMenu = () => {
       {isOpenNavbar && (
         <div className={`burger__navbar navbar ${animationClass}`}>
           <Navbar />
+          <div className="burger__contacts contacts">
+            <div className="contacts__messengers">
+              <Messengers />
+            </div>
+            <div className="contacts__phone">
+              <Phone />
+            </div>
+          </div>
         </div>
       )}
     </div>

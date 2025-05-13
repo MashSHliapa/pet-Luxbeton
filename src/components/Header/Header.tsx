@@ -16,7 +16,7 @@ export const Header = () => {
           <div className="header__burger-menu">
             <BurgerMenu />
           </div>
-          <div className="header__navbar navbar">
+          <div className="header__navbar">
             <Navbar />
           </div>
           <div className="header__contacts">

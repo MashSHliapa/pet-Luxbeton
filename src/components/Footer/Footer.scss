@@ -1,0 +1,151 @@
+@use '../Layout/Layout.scss' as layout;
+
+.footer {
+  background-color: #232323;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 46px 0 60px;
+
+    @include layout.breakpoint(lg) {
+      padding: 60px 0 20px;
+    }
+
+    @include layout.breakpoint(md) {
+      gap: 45px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include layout.breakpoint(lg) {
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 60px;
+      row-gap: 40px;
+    }
+
+    @include layout.breakpoint(xs) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__logo {
+    .logo__favicon img {
+      min-width: 109px;
+
+      @include layout.breakpoint(xs) {
+        min-width: 100%;
+        max-width: 95px;
+      }
+    }
+
+    .logo__title {
+      font-size: 32px;
+
+      @include layout.breakpoint(lg) {
+        font-size: 28px;
+      }
+    }
+  }
+
+  &__navbar .navbar__list {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 16px;
+    max-width: 238px;
+
+    @include layout.breakpoint(xs) {
+      row-gap: 18px;
+      margin: 40px 0 28px;
+    }
+  }
+
+  &__navbar .navbar__item {
+    min-width: 113px;
+  }
+
+  &__messengers {
+    .messengers {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .messengers__icons {
+      gap: 17px;
+    }
+  }
+
+  &__opening-hours,
+  &__meta {
+    line-height: 1.67;
+  }
+
+  &__opening-hours {
+    font-size: 12px;
+
+    @include layout.breakpoint(xs) {
+      margin: 25px 0 29px;
+    }
+  }
+
+  &__phone {
+    font-size: 20px;
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 6px;
+    font-size: 12px;
+
+    @include layout.breakpoint(md) {
+      text-align: center;
+    }
+  }
+
+  &__privacy-policy,
+  &__copyright {
+    flex: 0 1 50%;
+
+    @include layout.breakpoint(md) {
+      flex: 0 1 100%;
+    }
+  }
+
+  &__privacy-policy {
+    @include layout.breakpoint(md) {
+      order: 1;
+    }
+  }
+
+  &__copyright {
+    line-height: 1.4;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+
+  &__agreement {
+    flex: 0 1 100%;
+
+    @include layout.breakpoint(md) {
+      order: 3;
+    }
+  }
+
+  &__copyright,
+  &__agreement {
+    text-align: end;
+
+    @include layout.breakpoint(md) {
+      text-align: center;
+    }
+  }
+}
