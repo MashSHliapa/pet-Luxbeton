@@ -1,0 +1,104 @@
+@use '../Layout/Layout.scss' as layout;
+
+.promotion {
+  background: url('../../assets/images/promotion1.png') 0% 100%/30% no-repeat,
+    url('../../assets/images/promotion2.png') 32% 100%/30% no-repeat,
+    url('../../assets/images/promotion3.png') 64% 100%/30% no-repeat,
+    url('../../assets/images/promotion4.png') 96% 100%/30% no-repeat,
+    url('../../assets/images/promotion_bg.png') 0 0/100% no-repeat #232323;
+  overflow: hidden;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 123px 0 30px;
+
+    @include layout.breakpoint(lg) {
+      padding: 90px 0 30px;
+    }
+
+    @include layout.breakpoint(sm) {
+      padding: 65px 0 30px;
+    }
+
+    @include layout.breakpoint(xs) {
+      padding: 40px 0 18px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    max-width: 855px;
+
+    @include layout.breakpoint(lg) {
+      max-width: 730px;
+    }
+
+    @include layout.breakpoint(md) {
+      max-width: 570px;
+    }
+
+    @include layout.breakpoint(sm) {
+      max-width: 508px;
+    }
+
+    @include layout.breakpoint(xs) {
+      max-width: 251px;
+    }
+  }
+
+  &__present-img {
+    position: absolute;
+    bottom: -54%;
+    right: -42%;
+    z-index: 6;
+    overflow: hidden;
+
+    @include layout.breakpoint(lg) {
+      bottom: -65%;
+      right: -49%;
+    }
+
+    @include layout.breakpoint(md) {
+      bottom: -50%;
+      right: -41%;
+      max-width: 310px;
+    }
+
+    @include layout.breakpoint(md) {
+      bottom: 23%;
+      right: -5%;
+      max-width: 230px;
+    }
+
+    @include layout.breakpoint(md) {
+      bottom: 37%;
+      right: -6%;
+      max-width: 160px;
+    }
+  }
+
+  &__gallery {
+    flex: 0 1 500px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5px;
+
+    @include layout.breakpoint(lg) {
+      flex: 0 1 400px;
+    }
+
+    @include layout.breakpoint(md) {
+      flex: 0 1 300px;
+    }
+
+    @include layout.breakpoint(sm) {
+      flex: 0 1 230px;
+    }
+
+    @include layout.breakpoint(xs) {
+      flex: 0 1 150px;
+    }
+  }
+}
