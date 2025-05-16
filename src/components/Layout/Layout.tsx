@@ -6,6 +6,7 @@ import { Design } from '../Design/Design';
 import { Footer } from '../Footer/Footer';
 import { Gallery } from '../Gallery/Gallery';
 import { Header } from '../Header/Header';
+import { HowWeWork } from '../HowWeWork/HowWeWork';
 import { Main } from '../Main/Main';
 import { Promotion } from '../Promotion/Promotion';
 import './Layout.scss';
@@ -22,6 +23,7 @@ export const Layout = () => {
       <Advantages />
       <Complexes />
       <Design />
+      <HowWeWork />
       <Promotion />
       <Footer />
     </div>

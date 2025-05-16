@@ -1,0 +1,176 @@
+@use '../Layout/Layout.scss' as style;
+@use '../Layout/Layout.scss' as layout;
+
+.how-wep-work {
+  position: relative;
+
+  &__body {
+    padding: 200px 0 190px;
+
+    @include layout.breakpoint(lg) {
+      padding: 100px 0 90px;
+    }
+
+    @include layout.breakpoint(md) {
+      padding: 57px 0 90px;
+    }
+  }
+
+  &__title {
+    max-width: 626px;
+
+    @include layout.breakpoint(lg) {
+      max-width: 535px;
+    }
+
+    @include layout.breakpoint(md) {
+      max-width: 440px;
+    }
+
+    @include layout.breakpoint(md) {
+      max-width: 400px;
+    }
+
+    @include layout.breakpoint(xs) {
+      max-width: 190px;
+    }
+  }
+
+  &__subtitle {
+    margin: 40px 0 62px;
+
+    @include layout.breakpoint(md) {
+      margin: 32px 0 45px;
+    }
+
+    @include layout.breakpoint(xs) {
+      margin: 28px 0 32px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 35px;
+    column-gap: 15px;
+
+    @include layout.breakpoint(lg) {
+      row-gap: 20px;
+      column-gap: 12px;
+    }
+
+    @include layout.breakpoint(sm) {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+
+  &__list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 370px;
+    height: 265px;
+    padding: 27px 0 46px 35px;
+
+    @include layout.breakpoint(lg) {
+      width: 305px;
+      height: 230px;
+      padding: 22px 0 35px 35px;
+    }
+
+    @include layout.breakpoint(md) {
+      width: 230px;
+      height: 180px;
+      padding: 15px 0 20px 20px;
+    }
+
+    @include layout.breakpoint(sm) {
+      width: 100%;
+      height: 190px;
+    }
+    @include layout.breakpoint(xs) {
+      height: 180px;
+    }
+  }
+
+  &__item1 {
+    background: url('../../assets/images/howWeWork1.png') 100% 80%/60% no-repeat, style.$white-grey;
+
+    @include layout.breakpoint(lg) {
+      background: url('../../assets/images/howWeWork1.png') 100% 40%/50% no-repeat, style.$white-grey;
+    }
+  }
+
+  &__item2 {
+    background: url('../../assets/images/howWeWork2.png') 100% 40%/90% no-repeat, style.$orange-yellow-gradient;
+
+    @include layout.breakpoint(lg) {
+      background: url('../../assets/images/howWeWork2.png') 100% 40%/80% no-repeat, style.$orange-yellow-gradient;
+    }
+  }
+
+  &__item3 {
+    background: url('../../assets/images/howWeWork3.png') 100% 50%/90% no-repeat, style.$white-grey;
+
+    @include layout.breakpoint(lg) {
+      background: url('../../assets/images/howWeWork3.png') 100% 40%/80% no-repeat, style.$white-grey;
+    }
+  }
+
+  &__item4 {
+    background: url('../../assets/images/howWeWork4.png') 100% 55%/45% no-repeat, style.$orange-yellow-gradient;
+
+    @include layout.breakpoint(lg) {
+      background: url('../../assets/images/howWeWork4.png') 100% 40%/40% no-repeat, style.$orange-yellow-gradient;
+    }
+  }
+
+  &__item5 {
+    background: url('../../assets/images/howWeWork5.png') 100% 20%/45% no-repeat, style.$white-grey;
+
+    @include layout.breakpoint(lg) {
+      background: url('../../assets/images/howWeWork5.png') 100% 20%/40% no-repeat, style.$white-grey;
+    }
+  }
+
+  &__item6 {
+    background: url('../../assets/images/howWeWork6.png') 100% 50%/40% no-repeat, style.$orange-yellow-gradient;
+
+    @include layout.breakpoint(lg) {
+      background: url('../../assets/images/howWeWork6.png') 100% 30%/37% no-repeat, style.$orange-yellow-gradient;
+    }
+  }
+
+  &__number {
+    color: #7c7c7c;
+    font-size: 60px;
+    font-weight: 300;
+  }
+
+  &__text {
+    max-width: 190px;
+
+    @include layout.breakpoint(lg) {
+      font-size: 16px;
+      max-width: 180px;
+    }
+
+    @include layout.breakpoint(md) {
+      font-size: 14px;
+      max-width: 150px;
+    }
+
+    @include layout.breakpoint(sm) {
+      font-size: 16px;
+      max-width: 200px;
+    }
+
+    @include layout.breakpoint(xs) {
+      max-width: 160px;
+    }
+  }
+}
