@@ -1,14 +1,22 @@
 import { ReactNode } from 'react';
-import background from '../../assets/images/main_bg.png';
-import backgroundMobile from '../../assets/images/main_bg_mobile.png';
 import './BackgroundWrapper.scss';
 
-export const BackgroundWrapper = (props: { children: ReactNode }) => {
+interface BackgroundWrapperProps {
+  children: ReactNode;
+  background: string;
+  backgroundMobile?: string;
+  theme: 'light' | 'dark';
+}
+
+export const BackgroundWrapper = (props: BackgroundWrapperProps) => {
   return (
     <div className="backgroundWrapper">
-      <img src={background} alt="background" className="backgroundWrapper__bg background _ibg" />
-      <img src={backgroundMobile} alt="background" className="backgroundWrapper__bg-mobile background _ibg" />
-      <div className="backgroundWrapper__dark-overlay"></div>
+      <img src={props.background} alt="background" className="backgroundWrapper__bg background _ibg" />
+      {props.backgroundMobile && (
+        <img src={props.backgroundMobile} alt="background" className="backgroundWrapper__bg-mobile background _ibg" />
+      )}
+      {props.theme === 'dark' && <div className="backgroundWrapper__dark-overlay"></div>}
+      {props.theme === 'light' && <div className="backgroundWrapper__light-overlay"></div>}
       <div className="content">{props.children}</div>
     </div>
   );

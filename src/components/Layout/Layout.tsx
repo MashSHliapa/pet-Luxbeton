@@ -9,20 +9,25 @@ import { Header } from '../Header/Header';
 import { HowWeWork } from '../HowWeWork/HowWeWork';
 import { Main } from '../Main/Main';
 import { Promotion } from '../Promotion/Promotion';
+import backgroundMain from '../../assets/images/main_bg.png';
+import backgroundMobileMain from '../../assets/images/main_bg_mobile.png';
+import backgroundAdv from '../../assets/images/advantages_bg_top.png';
 import './Layout.scss';
 
 export const Layout = () => {
   return (
     <div className="layout">
-      <BackgroundWrapper>
+      <BackgroundWrapper background={backgroundMain} backgroundMobile={backgroundMobileMain} theme={'dark'}>
         <Header />
         <Main />
       </BackgroundWrapper>
       <Gallery />
       <Catalog />
-      <Advantages />
-      <Complexes />
-      <Design />
+      <BackgroundWrapper background={backgroundAdv} theme={'light'}>
+        <Advantages />
+        <Complexes />
+        <Design />
+      </BackgroundWrapper>
       <HowWeWork />
       <Promotion />
       <Footer />
