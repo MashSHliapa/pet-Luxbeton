@@ -6,7 +6,7 @@ import './Complexes.scss';
 
 export const Complexes = () => {
   return (
-    <div className="complexes">
+    <div className="complexes" id="complexes">
       <div className="complexes__container">
         <div className="complexes__body">
           <div className="complexes__title">

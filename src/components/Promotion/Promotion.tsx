@@ -4,7 +4,7 @@ import './Promotion.scss';
 
 export const Promotion = () => {
   return (
-    <div className="promotion">
+    <div className="promotion" id="promotion">
       <div className="promotion__container _container">
         <div className="promotion__body">
           <div className="promotion__content-box">

@@ -50,7 +50,7 @@ export const Catalog = () => {
           </ul>
         </div>
       </div>
-      <div className="catalog__bg background _ibg">
+      <div className="catalog__background background _ibg">
         <img src={background} alt="background" />
       </div>
     </div>

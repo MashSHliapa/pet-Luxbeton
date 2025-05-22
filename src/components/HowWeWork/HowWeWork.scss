@@ -1,18 +1,18 @@
 @use '../Layout/Layout.scss' as style;
 @use '../Layout/Layout.scss' as layout;
 
-.how-wep-work {
+.how-we-work {
   position: relative;
 
   &__body {
-    padding: 200px 0 190px;
+    padding: 60px 0 100px;
 
     @include layout.breakpoint(lg) {
-      padding: 100px 0 90px;
+      padding: 50px 0 90px;
     }
 
     @include layout.breakpoint(md) {
-      padding: 57px 0 90px;
+      padding: 40px 0 50px;
     }
   }
 
@@ -24,15 +24,15 @@
     }
 
     @include layout.breakpoint(md) {
-      max-width: 440px;
+      max-width: 270px;
     }
 
-    @include layout.breakpoint(md) {
-      max-width: 400px;
+    @include layout.breakpoint(sm) {
+      max-width: 250px;
     }
 
     @include layout.breakpoint(xs) {
-      max-width: 190px;
+      max-width: 188px;
     }
   }
 
@@ -172,5 +172,9 @@
     @include layout.breakpoint(xs) {
       max-width: 160px;
     }
+  }
+
+  &__background {
+    top: -55px !important;
   }
 }

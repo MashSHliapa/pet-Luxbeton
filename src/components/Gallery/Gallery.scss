@@ -5,15 +5,16 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding-bottom: 26px;
+    padding: 30px 0 115px;
+
+    @include layout.breakpoint(lg) {
+      padding-bottom: 80px;
+    }
 
     @include layout.breakpoint(md) {
       flex-wrap: wrap;
       gap: 45px;
-    }
-
-    @include layout.breakpoint(sm) {
-      padding-bottom: 20px;
+      padding: 20px 0 60px;
     }
   }
 

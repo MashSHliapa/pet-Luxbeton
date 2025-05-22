@@ -6,7 +6,7 @@ import './Gallery.scss';
 
 export const Gallery = () => {
   return (
-    <div className="gallery">
+    <div className="gallery" id="gallery">
       <div className="gallery__container _container">
         <ul className="gallery__list">
           <li className="gallery__item">

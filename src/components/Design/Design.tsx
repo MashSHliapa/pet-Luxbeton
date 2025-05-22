@@ -21,6 +21,7 @@ export const Design = () => {
           </div>
         </div>
       </div>
+      <div className="design__light-overlay"></div>
     </div>
   );
 };

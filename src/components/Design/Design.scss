@@ -2,6 +2,7 @@
 @use '../Layout/Layout.scss' as style;
 
 .design {
+  position: relative;
   background: url('../../assets/images/design_bg.png') 100% 50% no-repeat;
 
   @include layout.breakpoint(lg) {
@@ -9,7 +10,8 @@
   }
 
   @include layout.breakpoint(sm) {
-    background: url('../../assets/images/design_bg_mobile.png') 0 30%/ 100% no-repeat;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 85%, rgba(255, 255, 255, 0.99) 100%),
+      url('../../assets/images/design_bg_mobile.png') 0 30%/100% no-repeat;
   }
 
   &__body {
@@ -21,6 +23,10 @@
 
     @include layout.breakpoint(md) {
       padding: 0px 0 58px 0px;
+    }
+
+    @include layout.breakpoint(sm) {
+      margin-bottom: 40px;
     }
   }
 

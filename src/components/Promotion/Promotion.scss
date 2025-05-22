@@ -11,15 +11,7 @@
   &__body {
     display: flex;
     flex-direction: column;
-    padding: 123px 0 30px;
-
-    @include layout.breakpoint(lg) {
-      padding: 90px 0 30px;
-    }
-
-    @include layout.breakpoint(sm) {
-      padding: 65px 0 30px;
-    }
+    padding: 60px 0 30px;
 
     @include layout.breakpoint(xs) {
       padding: 40px 0 18px;

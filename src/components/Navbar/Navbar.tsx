@@ -9,27 +9,27 @@ export const Navbar = () => {
           </a>
         </li>
         <li className="navbar__item">
-          <a href="#" className="navbar__link">
+          <a href="#gallery" className="navbar__link">
             Фотогалерея
           </a>
         </li>
         <li className="navbar__item">
-          <a href="#" className="navbar__link">
+          <a href="#promotion" className="navbar__link">
             Акции
           </a>
         </li>
         <li className="navbar__item">
-          <a href="#" className="navbar__link">
+          <a href="#howWeWork" className="navbar__link">
             О компании
           </a>
         </li>
         <li className="navbar__item">
-          <a href="#" className="navbar__link">
+          <a href="#complexes" className="navbar__link">
             Проекты
           </a>
         </li>
         <li className="navbar__item">
-          <a href="#" className="navbar__link">
+          <a href="#footer" className="navbar__link">
             Контакты
           </a>
         </li>

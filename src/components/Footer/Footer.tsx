@@ -6,7 +6,7 @@ import './Footer.scss';
 
 export const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="footer__container _container">
         <div className="footer__body">
           <div className="footer__info">

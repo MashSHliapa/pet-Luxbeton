@@ -3,10 +3,10 @@
 
 .advantages {
   &__body {
-    padding-bottom: 130px;
+    padding-bottom: 70px;
 
-    @include layout.breakpoint(lg) {
-      padding-bottom: 70px;
+    @include layout.breakpoint(md) {
+      padding-bottom: 50px;
     }
   }
 
